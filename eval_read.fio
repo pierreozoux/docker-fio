@@ -1,0 +1,14 @@
+[global]
+ioengine=libaio
+iodepth=32
+direct=1
+invalidate=1
+runtime=60
+size=100g
+directory=/test
+filename=test
+
+[rand-read-16k]
+bs=16k
+rw=randread
+stonewall
