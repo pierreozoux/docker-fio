@@ -2,7 +2,7 @@ FROM debian
 VOLUME /test
 RUN apt-get update && apt-get install -y \
       fio \
-      iprf \
+      iperf \
       jq \
       lshw \
  && apt-get remove -y --purge \
