@@ -4,8 +4,7 @@ iodepth=32
 direct=1
 invalidate=1
 runtime=60
-size=10g
-#size=100g
+size=100g
 directory=/test
 filename=test
 
