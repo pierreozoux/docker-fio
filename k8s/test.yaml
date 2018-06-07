@@ -1,0 +1,33 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: rookeval-claim
+  labels:
+    app: eval
+spec:
+  storageClassName: rook-block
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 320Gi
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: rookeval
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - image: pierreozoux/fio
+        name: rookeval
+        volumeMounts:
+        - name: eval-block-storage
+          mountPath: /test
+      volumes:
+      - name: eval-block-storage
+        persistentVolumeClaim:
+          claimName: rookeval-claim

@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: rook
+---
+apiVersion: rook.io/v1alpha1
+kind: Cluster
+metadata:
+  name: rook
+  namespace: rook
+spec:
+  versionTag: master
+  dataDirHostPath: /var/lib/rook
+  hostNetwork: true
+  storage:
+    useAllNodes: false
+    useAllDevices: true
+    deviceFilter: nvm
+    storeConfig:
+      storeType: bluestore
+    nodes:
+    - name: n1
+    - name: n2
+

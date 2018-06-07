@@ -17,7 +17,7 @@ hwinfo --disk > ./hw
 
 ## Network performance
 
-Evaluate the network performance between pods and ceph cluster.
+Evaluate the network performance between pods and ceph cluster nodes.
 We'll use iperf for that.
 
 ```
@@ -27,18 +27,32 @@ iperf -c $IP -i1 -t 10 > net
 
 ## RAW disk performance
 
-From the host:
+From the host, format your disk, mount it on `/mnt/disk/` and run:
 
 ```
-docker run -it --device /dev/nvme0:/test pierreozoux/fio > raw
+docker run -it -v /mnt/disk:/test pierreozoux/fio > raw
 ```
 
 ## CEPH volume performance
 
-From a pod:
+### Procedure to setup the cluster
+
+Once you have deployed the rook operator as described in the [documentation](https://rook.github.io/docs/rook/master/quickstart.html), please proceed to deploy the same cluster:
 
 ```
-docker run -it --device /dev/nvme0:/test pierreozoux/fio > ceph
+kubectl create -f k8s/rook-cluster.yaml
+kubectl create -f k8s/rook-storageclass.yaml
+```
+
+The important parameter here are:
+ - hostNetwork to avoid testing overlay network
+ - replica set to 2
+
+### Test performances
+
+Once your cluster is running and healthy:
+```
+kubectl create -f k8s/test.yaml
 ```
 
 ## PR
