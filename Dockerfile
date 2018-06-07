@@ -1,5 +1,4 @@
 FROM debian
-VOLUME /test
 RUN apt-get update && apt-get install -y \
       fio \
       iperf \
