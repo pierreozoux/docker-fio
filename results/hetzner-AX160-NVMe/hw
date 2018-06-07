@@ -1,0 +1,71 @@
+105: PCI 00.0: 10600 Disk                                       
+  [Created at block.245]
+  Unique ID: nghH.AfVvhtt5p16
+  Parent ID: M4NW.6HVdCPE4AT5
+  SysFS ID: /class/block/nvme1n1
+  SysFS BusID: nvme1
+  SysFS Device Link: /devices/pci0000:40/0000:40:01.2/0000:42:00.0/nvme/nvme1
+  Hardware Class: disk
+  Model: "Samsung Electronics Disk"
+  Vendor: pci 0x144d "Samsung Electronics Co Ltd"
+  Device: pci 0xa804 
+  SubVendor: pci 0x144d "Samsung Electronics Co Ltd"
+  SubDevice: pci 0xa801 
+  Driver: "nvme"
+  Driver Modules: "nvme"
+  Device File: /dev/nvme1n1
+  Device Files: /dev/nvme1n1, /dev/disk/by-id/nvme-SAMSUNG_MZQLW960HMJP-00003_S35XNB0JA02329, /dev/disk/by-id/nvme-eui.333558304aa023290025384200000001
+  Device Number: block 259:1
+  Geometry (Logical): CHS 915715/64/32
+  Size: 1875385008 sectors a 512 bytes
+  Capacity: 894 GB (960197124096 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #23 (Non-Volatile memory controller)
+
+106: IDE 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: 3OOL.H++0DmlrR52
+  Parent ID: wi3r.DJDhcBX9Gp8
+  SysFS ID: /class/block/sda
+  SysFS BusID: 0:0:0:0
+  SysFS Device Link: /devices/pci0000:00/0000:00:08.1/0000:02:00.2/ata1/host0/target0:0:0/0:0:0:0
+  Hardware Class: disk
+  Model: "Micron_1100_MTFD"
+  Device: "Micron_1100_MTFD"
+  Revision: "U031"
+  Serial ID: "17411954D1F4"
+  Driver: "ahci", "sd"
+  Driver Modules: "ahci"
+  Device File: /dev/sda
+  Device Files: /dev/sda, /dev/disk/by-id/ata-Micron_1100_MTFDDAK256TBN_17411954D1F4, /dev/disk/by-id/wwn-0x500a07511954d1f4, /dev/disk/by-path/pci-0000:02:00.2-ata-1
+  Device Number: block 8:0-8:15
+  Geometry (Logical): CHS 31130/255/63
+  Size: 500118192 sectors a 512 bytes
+  Capacity: 238 GB (256060514304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #74 (SATA controller)
+
+107: PCI 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: wLCS.AfVvhtt5p16
+  Parent ID: gDAN.6HVdCPE4AT5
+  SysFS ID: /class/block/nvme0n1
+  SysFS BusID: nvme0
+  SysFS Device Link: /devices/pci0000:40/0000:40:01.1/0000:41:00.0/nvme/nvme0
+  Hardware Class: disk
+  Model: "Samsung Electronics Disk"
+  Vendor: pci 0x144d "Samsung Electronics Co Ltd"
+  Device: pci 0xa804 
+  SubVendor: pci 0x144d "Samsung Electronics Co Ltd"
+  SubDevice: pci 0xa801 
+  Driver: "nvme"
+  Driver Modules: "nvme"
+  Device File: /dev/nvme0n1
+  Device Files: /dev/nvme0n1, /dev/disk/by-id/nvme-SAMSUNG_MZQLW960HMJP-00003_S35XNB0JA02332, /dev/disk/by-id/nvme-eui.333558304aa023320025384200000001
+  Device Number: block 259:0
+  Geometry (Logical): CHS 915715/64/32
+  Size: 1875385008 sectors a 512 bytes
+  Capacity: 894 GB (960197124096 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #36 (Non-Volatile memory controller)
+

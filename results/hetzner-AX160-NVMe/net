@@ -1,0 +1,18 @@
+------------------------------------------------------------
+Client connecting to x, TCP port 5001
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[  3] local x port 40884 connected with x port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0- 1.0 sec   826 MBytes  6.93 Gbits/sec
+[  3]  1.0- 2.0 sec   847 MBytes  7.11 Gbits/sec
+[  3]  2.0- 3.0 sec   869 MBytes  7.29 Gbits/sec
+[  3]  3.0- 4.0 sec   871 MBytes  7.30 Gbits/sec
+[  3]  4.0- 5.0 sec   863 MBytes  7.24 Gbits/sec
+[  3]  5.0- 6.0 sec   873 MBytes  7.32 Gbits/sec
+[  3]  6.0- 7.0 sec   852 MBytes  7.15 Gbits/sec
+[  3]  7.0- 8.0 sec   842 MBytes  7.06 Gbits/sec
+[  3]  8.0- 9.0 sec   740 MBytes  6.21 Gbits/sec
+[  3]  9.0-10.0 sec   881 MBytes  7.39 Gbits/sec
+[  3]  0.0-10.0 sec  8.27 GBytes  7.10 Gbits/sec
+
